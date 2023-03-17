@@ -6,13 +6,33 @@
 
 3. <code>npm start</code>
 
+## Models
+
+### User model
+   - firstName: first name of the user
+   - lastName: last name of the user
+   - email: email of the user
+   - username: username name of the user
+   - phoneNumber: phone number of the user
+   - password: password of the user
+   
+### Cart model
+   - userId: user id
+   - items: items added by the user
+   - subtotal: total worth of the cart
+
+### Order model
+   - userId: user id
+   - orders: total orders made by the user
+   - phoneNumber: phone number of the user
+
 ## APIs
 
 ### Register User
    - api/auth/add-user
    - User can register by adding firstName, lastName, email, username, phoneNumber and password.
 ### Login User
-   - api/user/login-user
+   - api/auth/login-user
    - User can login with either phone number or username and password.
 ### User Info
    - api/user/info
