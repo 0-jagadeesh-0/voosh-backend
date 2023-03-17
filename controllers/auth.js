@@ -25,7 +25,10 @@ const signin = async (req, res) => {
     try {
         const username = req.body.username;
         const password = req.body.password;
-        const user = await User.findOne({ username });
+        let user = await User.findOne({ username });
+        if (user == null) {
+            user = await User.findOne({ phoneNumber: username });
+        }
         if (user) {
             if (bcrypt.compareSync(password, user.password)) {
                 const id = user._id;
