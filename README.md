@@ -1,4 +1,5 @@
 # voosh-backend
 
-<code>npm install</code>
-<cod>npm start</code>
+- <code>npm install</code>
+
+- <code>npm start</code>
